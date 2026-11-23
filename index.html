@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warung Nasi Padang Sabana Rancak | Cita Rasa Autentik Minangkabau</title>
+  <meta name="description" content="Warung Makan Nasi Padang Sabana Rancak - Kelezatan rendang warisan, gulai kaya rempah, dan tradisi hidang asli Minangkabau. Hubungi pemilik dan pesan langsung.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Cinzel Decorative -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor Elements -->
+  <div class="custom-cursor" id="customCursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+  <div class="cursor-trail-container" id="trailContainer"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" data-hover="brand">
+        <div class="logo-icon">
+          <!-- Minang Rumah Gadang Stylized Silhouette -->
+          <svg viewBox="0 0 100 80" class="gonjong-svg">
+            <path d="M50 15 L35 45 L40 45 L30 65 L70 65 L60 45 L65 45 Z" fill="currentColor"/>
+            <path d="M10 50 Q 30 38 45 42 Q 25 55 10 50 Z" fill="currentColor"/>
+            <path d="M90 50 Q 70 38 55 42 Q 75 55 90 50 Z" fill="currentColor"/>
+            <circle cx="50" cy="18" r="3" fill="#E6A117"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="brand-name">SABANA RANCAK</span>
+          <span class="brand-tagline">Nasi Padang Autentik Sejak 1994</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#filosofi" class="nav-link" data-hover="link">Filosofi & Kisah</a></li>
+          <li><a href="#rempah-interaktif" class="nav-link" data-hover="link">Rahasia Rempah</a></li>
+          <li><a href="#tradisi" class="nav-link" data-hover="link">Tradisi Padang</a></li>
+          <li><a href="#menu" class="nav-link" data-hover="link">Menu Favorit</a></li>
+          <li><a href="#kontak" class="nav-link" data-hover="link">Kontak Pemilik</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#kontak-modal" class="btn btn-primary btn-sm" id="btnBukaKontak" data-hover="btn">
+          <i class="fa-brands fa-whatsapp"></i> Hubungi Pemilik
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Buka Menu Navigasi">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-backdrop"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-tag" data-hover="badge">
+            <span class="badge-dot"></span> Racikan Asli Dapur Rang Minang
+          </div>
+          <h1 class="hero-title">
+            Kelezatan Warisan <br>
+            <span class="text-gradient">Nasi Padang Sabana Rancak</span>
+          </h1>
+          <p class="hero-desc">
+            Bukan sekadar santapan mengenyangkan, masakan Minangkabau adalah simfoni perpaduan santan kental murni, cabai merah ranum, dan 16 jenis rempah tropis yang dimasak perlahan dengan dedikasi penuh kasih.
+          </p>
+          <div class="hero-buttons">
+            <a href="#filosofi" class="btn btn-primary" data-hover="btn">
+              <i class="fa-solid fa-compass"></i> Jelajahi Cerita Kuliner
+            </a>
+            <a href="#menu" class="btn btn-outline" data-hover="btn">
+              <i class="fa-solid fa-utensils"></i> Lihat Daftar Menu
+            </a>
+            <a href="https://wa.me/6281298765432?text=Halo%20Uda%20Pemilik%20Warung%20Sabana%20Rancak,%20saya%20ingin%20tanya%20menu%20dan%20pesan%20nasi%20padang" target="_blank" rel="noopener" class="btn btn-wa-direct" data-hover="btn">
+              <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item" data-hover="card">
+              <span class="stat-number">30+</span>
+              <span class="stat-label">Tahun Resep Warisan</span>
+            </div>
+            <div class="stat-separator"></div>
+            <div class="stat-item" data-hover="card">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Halal & Rempah Alami</span>
+            </div>
+            <div class="stat-separator"></div>
+            <div class="stat-item" data-hover="card">
+              <span class="stat-number">25+</span>
+              <span class="stat-label">Pilihan Lauk Harian</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-wrapper" data-hover="dish">
+            <div class="dish-glow"></div>
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="Sajian Rendang Daging Minang" class="hero-img">
+            <div class="floating-badge badge-rendang" data-hover="badge">
+              <i class="fa-solid fa-fire-flame-curved"></i> Rendang Daging Sapi Marapi
+            </div>
+            <div class="floating-badge badge-sambal" data-hover="badge">
+              <i class="fa-solid fa-pepper-hot"></i> Sambal Lado Mudo Khas Bukittinggi
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#filosofi" class="scroll-down-indicator" aria-label="Gulir ke bawah">
+        <span>GULIR MENJELAJAH</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- Interactive Intro: Filosofi Masakan Minang -->
+    <section class="section filosofi-section" id="filosofi">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-kicker">Filosofi Dapur Minang</span>
+          <h2 class="section-title">Mengapa Masakan Padang Begitu Istimewa?</h2>
+          <p class="section-subtitle">
+            Bagi masyarakat Minangkabau, makanan bukan hanya urusan mengisi perut, melainkan cerminan adat, rasa syukur, dan seni merawat tradisi.
+          </p>
+        </div>
+
+        <!-- 4 Pilar Filosofis -->
+        <div class="filosofi-grid">
+          <div class="filosofi-card" data-hover="card">
+            <div class="card-icon red">
+              <i class="fa-solid fa-pepper-hot"></i>
+            </div>
+            <h3 class="card-title">Lado (Pedas Menggugah)</h3>
+            <p class="card-desc">
+              Cabai merah dan hijau keriting melambangkan ketegasan, keberanian berpikir (alim ulama), serta semangat hidup pantang menyerah khas perantau Minang.
+            </p>
+            <div class="card-tag">Kehangatan Batin</div>
+          </div>
+
+          <div class="filosofi-card" data-hover="card">
+            <div class="card-icon gold">
+              <i class="fa-solid fa-bowl-rice"></i>
+            </div>
+            <h3 class="card-title">Karembie (Kelapa & Santan)</h3>
+            <p class="card-desc">
+              Pohon kelapa yang serbaguna melambangkan kaum cerdik pandai (cadiak pandai) yang menebarkan manfaat bagi seluruh suku bangsa lewat kuah gulai gurih legit.
+            </p>
+            <div class="card-tag">Kekayaan Gurih</div>
+          </div>
+
+          <div class="filosofi-card" data-hover="card">
+            <div class="card-icon green">
+              <i class="fa-solid fa-seedling"></i>
+            </div>
+            <h3 class="card-title">Rempah (Bumbu Warisan)</h3>
+            <p class="card-desc">
+              Kombinasi jahe, lengkuas, serai, daun jeruk, cengkeh, dan kapulaga mempererat keharmonisan antar-keluarga layaknya ragam suku di ranah Minang.
+            </p>
+            <div class="card-tag">Pengikat Tradisi</div>
+          </div>
+
+          <div class="filosofi-card" data-hover="card">
+            <div class="card-icon dark">
+              <i class="fa-solid fa-drumstick-bite"></i>
+            </div>
+            <h3 class="card-title">Daging (Bahan Pilihan)</h3>
+            <p class="card-desc">
+              Bahan utama (Daging Sapi, Ayam, Ikan) melambangkan para Niniak Mamak (pemimpin adat) yang bijaksana memayungi dan melindungi nagari.
+            </p>
+            <div class="card-tag">Keagungan Adat</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Section: Rahasia Rempah & Coba Ketuk -->
+    <section class="section rempah-section" id="rempah-interaktif">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-kicker">Eksplorasi Interaktif</span>
+          <h2 class="section-title">Sentuh & Kenali 6 Bumbu Sakral Padang</h2>
+          <p class="section-subtitle">
+            Gerakkan kursor Anda dan klik rempah di bawah ini untuk mengungkap khasiat, aroma, dan rahasia kenapa masakan kami meresap sampai ke tulang!
+          </p>
+        </div>
+
+        <div class="rempah-interactive-container">
+          <!-- Rempah Selector Buttons -->
+          <div class="rempah-pills-wrapper">
+            <button class="rempah-pill active" data-rempah="lengkuas" data-hover="btn">
+              <span class="pill-icon">🌿</span> Lengkuas (Laos)
+            </button>
+            <button class="rempah-pill" data-rempah="cabai" data-hover="btn">
+              <span class="pill-icon">🌶️</span> Cabai Keriting
+            </button>
+            <button class="rempah-pill" data-rempah="santan" data-hover="btn">
+              <span class="pill-icon">🥥</span> Santan Murni
+            </button>
+            <button class="rempah-pill" data-rempah="serai" data-hover="btn">
+              <span class="pill-icon">🌱</span> Serai Harum
+            </button>
+            <button class="rempah-pill" data-rempah="asam" data-hover="btn">
+              <span class="pill-icon">🍋</span> Asam Kandis
+            </button>
+            <button class="rempah-pill" data-rempah="kapulaga" data-hover="btn">
+              <span class="pill-icon">✨</span> Kapulaga & Cengkeh
+            </button>
+          </div>
+
+          <!-- Interactive Display Board -->
+          <div class="rempah-display-board" id="rempahDisplay" data-hover="card">
+            <div class="rempah-visual-col">
+              <div class="rempah-circle-avatar" id="rempahEmoji">🌿</div>
+              <div class="rempah-badge" id="rempahLatin">Alpinia galanga</div>
+            </div>
+            <div class="rempah-info-col">
+              <div class="rempah-tagline" id="rempahTagline">Penjaga Keharuman Rendang</div>
+              <h3 class="rempah-name" id="rempahName">Lengkuas (Laos Merah Minang)</h3>
+              <p class="rempah-text" id="rempahDesc">
+                Lengkuas diparut halus atau digeprek untuk melepaskan minyak atsiri yang khas. Bersama santan dan daging, lengkuas membentuk serundeng karamel bumbu rendang yang tahan hingga berbulan-bulan tanpa pengawet buatan.
+              </p>
+              <div class="rempah-metrics">
+                <div class="metric-box">
+                  <span class="metric-label">Tingkat Aroma:</span>
+                  <div class="metric-bar"><div class="metric-fill" id="metricAroma" style="width: 85%;"></div></div>
+                </div>
+                <div class="metric-box">
+                  <span class="metric-label">Peran Pengawet Alami:</span>
+                  <div class="metric-bar"><div class="metric-fill" id="metricPengawet" style="width: 95%;"></div></div>
+                </div>
+              </div>
+              <div class="rempah-used-in">
+                <strong>Menu Andalan:</strong> <span id="rempahMenu">Rendang Daging Sapi, Kalio Ayam, Gulai Tunjang</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Tradisi Padang: Bungkus vs Hidang -->
+    <section class="section tradisi-section" id="tradisi">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-kicker">Tradisi & Fakta Unik</span>
+          <h2 class="section-title">Dua Pengalaman Ikonik Rumah Makan Padang</h2>
+          <p class="section-subtitle">
+            Pernahkah Anda bertanya mengapa nasi bungkus Padang porsinya selalu lebih banyak? Geser atau klik untuk membandingkan!
+          </p>
+        </div>
+
+        <div class="tradisi-comparison-wrapper">
+          <!-- Card 1: Nasi Bungkus -->
+          <div class="tradisi-card" data-hover="card">
+            <div class="tradisi-badge">Favorit Dibawa Pulang</div>
+            <div class="tradisi-header">
+              <div class="tradisi-icon"><i class="fa-solid fa-box-archive"></i></div>
+              <h3>Misteri Nasi Bungkus Padang</h3>
+            </div>
+            <p class="tradisi-text">
+              Tahukah Anda? Alasan porsi nasi bungkus Padang selalu lebih melimpah berakar dari <strong>rasa solidaritas zaman penjajahan</strong>. Nasi yang dibungkus ditujukan untuk dimakan bersama keluarga di rumah, sehingga Uda pemilik warung melebihkan porsi nasi dan kuahnya secara cuma-cuma.
+            </p>
+            <ul class="tradisi-points">
+              <li><i class="fa-solid fa-check text-gold"></i> Daun pisang melipat aroma wangi asap yang khas.</li>
+              <li><i class="fa-solid fa-check text-gold"></i> Kuah gulai dan sambal meresap sempurna ke bulir nasi.</li>
+              <li><i class="fa-solid fa-check text-gold"></i> Porsi nasi 1.5x lebih banyak dibanding makan di piring!</li>
+            </ul>
+            <div class="tradisi-footer">
+              <a href="#kontak-modal" class="btn btn-outline btn-sm w-100" data-hover="btn">
+                <i class="fa-solid fa-bag-shopping"></i> Pesan Nasi Bungkus Komplit
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Tradisi Hidang / Manjunjung Piring -->
+          <div class="tradisi-card featured" data-hover="card">
+            <div class="tradisi-badge gold">Tradisi Paling Populer</div>
+            <div class="tradisi-header">
+              <div class="tradisi-icon"><i class="fa-solid fa-hand-holding-hand"></i></div>
+              <h3>Seni Manjunjung Piring (Gaya Hidang)</h3>
+            </div>
+            <p class="tradisi-text">
+              Saat Anda duduk di warung makan Padang, pelayan akan berakrobat membawa <strong>hingga 20 piring lauk sekaligus</strong> bertumpuk di sepanjang kedua lengannya tanpa terjatuh. Seluruh lauk disajikan di meja Anda, dan Anda hanya membayar apa yang Anda santap!
+            </p>
+            <ul class="tradisi-points">
+              <li><i class="fa-solid fa-check text-gold"></i> Kebebasan memilih lauk sesuai selera di depan mata.</li>
+              <li><i class="fa-solid fa-check text-gold"></i> Sensasi makan bersama layaknya pesta adat Bajamba.</li>
+              <li><i class="fa-solid fa-check text-gold"></i> Kejujuran dan kehangatan sambutan khas Minangkabau.</li>
+            </ul>
+            <div class="tradisi-footer">
+              <a href="#kontak-modal" class="btn btn-primary btn-sm w-100" data-hover="btn">
+                <i class="fa-solid fa-chair"></i> Reservasi Meja Gaya Hidang
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Simulator: Racik Piring Padang Idaman -->
+        <div class="racik-simulator-box" data-hover="card">
+          <div class="simulator-header">
+            <div class="simulator-badge">Fitur Interaktif</div>
+            <h3>🥣 Simulator Racik Piring Nasi Padang Idamanmu</h3>
+            <p>Pilih kombinasi lauk kesukaan Anda, lihat total perkiraan kenikmatan & langsung kirim ke WhatsApp pemilik warung!</p>
+          </div>
+
+          <div class="simulator-body">
+            <div class="simulator-options">
+              <!-- Item 1: Nasi -->
+              <div class="sim-group">
+                <label class="sim-label">1. Pilihan Nasi & Kuah:</label>
+                <div class="sim-buttons" id="groupNasi">
+                  <button type="button" class="sim-btn active" data-category="nasi" data-name="Nasi Putih + Kuah Gulai Gulung (Banjir)" data-price="8000" data-hover="btn">
+                    Nasi + Kuah Banjir (Rp 8k)
+                  </button>
+                  <button type="button" class="sim-btn" data-category="nasi" data-name="Nasi Putih + Kuah Sedang" data-price="8000" data-hover="btn">
+                    Nasi + Kuah Sedang (Rp 8k)
+                  </button>
+                  <button type="button" class="sim-btn" data-category="nasi" data-name="Nasi Putih Kuah Pisah" data-price="8000" data-hover="btn">
+                    Nasi Kuah Dipisah (Rp 8k)
+                  </button>
+                </div>
+              </div>
+
+              <!-- Item 2: Lauk Utama -->
+              <div class="sim-group">
+                <label class="sim-label">2. Pilih Lauk Utama:</label>
+                <div class="sim-buttons" id="groupLauk">
+                  <button type="button" class="sim-btn active" data-category="lauk" data-name="Rendang Daging Sapi Marapi" data-price="22000" data-hover="btn">
+                    🥩 Rendang Daging (+22k)
+                  </button>
+                  <button type="button" class="sim-btn" data-category="lauk" data-name="Ayam Pop Minang Asli" data-price="18000" data-hover="btn">
+                    🍗 Ayam Pop Gurih (+18k)
+                  </button>
+                  <button type="button" class="sim-btn" data-category="lauk" data-name="Dendeng Batokok Balado" data-price="22000" data-hover="btn">
+                    🌶️ Dendeng Batokok (+22k)
+                  </button>
+                  <button type="button" class="sim-btn" data-category="lauk" data-name="Gulai Tunjang Kikil Empuk" data-price="24000" data-hover="btn">
+                    🍲 Gulai Tunjang (+24k)
+                  </button>
+                  <button type="button" class="sim-btn" data-category="lauk" data-name="Ayam Bakar Padang" data-price="18000" data-hover="btn">
+                    🔥 Ayam Bakar (+18k)
+                  </button>
+                </div>
+              </div>
+
+              <!-- Item 3: Pelengkap -->
+              <div class="sim-group">
+                <label class="sim-label">3. Pilih Pelengkap & Sambal:</label>
+                <div class="sim-buttons" id="groupPelengkap">
+                  <button type="button" class="sim-btn active" data-category="pelengkap" data-name="Sambal Ijo + Daun Singkong Rebus" data-price="4000" data-hover="btn">
+                    🌿 Sambal Ijo + Lalap Singkong (+4k)
+                  </button>
+                  <button type="button" class="sim-btn" data-category="pelengkap" data-name="Telur Dadar Barendo Crispy" data-price="10000" data-hover="btn">
+                    🍳 Telur Dadar Barendo (+10k)
+                  </button>
+                  <button type="button" class="sim-btn" data-category="pelengkap" data-name="Perkedel Kentang Padang" data-price="5000" data-hover="btn">
+                    🥔 Perkedel Kentang (+5k)
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Preview Struk / Summary -->
+            <div class="simulator-summary">
+              <div class="summary-card">
+                <h4><i class="fa-solid fa-receipt"></i> Racikan Piring Anda</h4>
+                <div class="summary-list" id="summaryList">
+                  <div class="summary-line">
+                    <span id="sumNasi">Nasi Putih + Kuah Banjir</span>
+                    <strong id="priceNasi">Rp 8.000</strong>
+                  </div>
+                  <div class="summary-line">
+                    <span id="sumLauk">Rendang Daging Sapi Marapi</span>
+                    <strong id="priceLauk">Rp 22.000</strong>
+                  </div>
+                  <div class="summary-line">
+                    <span id="sumPelengkap">Sambal Ijo + Lalap Singkong</span>
+                    <strong id="pricePelengkap">Rp 4.000</strong>
+                  </div>
+                </div>
+                <hr class="summary-divider">
+                <div class="summary-total">
+                  <span>Perkiraan Total:</span>
+                  <span class="total-amount" id="totalSimulator">Rp 34.000</span>
+                </div>
+                <button type="button" class="btn btn-primary w-100 mt-3" id="btnPesanSimulator" data-hover="btn">
+                  <i class="fa-brands fa-whatsapp"></i> Pesan Racikan Ini ke Pemilik
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-kicker">Daftar Menu Warung</span>
+          <h2 class="section-title">Pilihan Lauk Khas Sabana Rancak</h2>
+          <p class="section-subtitle">
+            Dimasak segar setiap subuh dengan kelapa tua pilihan dan rempah segar asli Sumatra Barat.
+          </p>
+
+          <!-- Category Filter Tabs -->
+          <div class="menu-tabs">
+            <button class="menu-tab-btn active" data-filter="all" data-hover="btn">Semua Menu</button>
+            <button class="menu-tab-btn" data-filter="legendaris" data-hover="btn">Legendaris (Daging)</button>
+            <button class="menu-tab-btn" data-filter="ayam" data-hover="btn">Ayam & Telur</button>
+            <button class="menu-tab-btn" data-filter="gulai" data-hover="btn">Gulai Kental</button>
+            <button class="menu-tab-btn" data-filter="pelengkap" data-hover="btn">Sambal & Sayur</button>
+          </div>
+        </div>
+
+        <!-- Menu Cards Grid -->
+        <div class="menu-grid" id="menuGrid">
+          <!-- Card 1 -->
+          <div class="menu-card" data-category="legendaris" data-hover="card">
+            <div class="menu-thumb">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Rendang Daging Sapi">
+              <span class="menu-badge best">Favorit No. 1</span>
+              <span class="spicy-level" title="Level Pedas 2 dari 3">🌶️🌶️</span>
+            </div>
+            <div class="menu-info">
+              <div class="menu-title-row">
+                <h3 class="menu-item-name">Rendang Daging Sapi Marapi</h3>
+                <span class="menu-price">Rp 22.000</span>
+              </div>
+              <p class="menu-desc">Daging sapi bagian gandik pilihan dimasak 8 jam hingga hitam legam, empuk lumer dengan bumbu karamel gurih mendalam.</p>
+              <div class="menu-card-footer">
+                <button class="btn btn-sm btn-outline-primary btn-pesan-item" data-name="Rendang Daging Sapi Marapi" data-price="22000" data-hover="btn">
+                  <i class="fa-brands fa-whatsapp"></i> Pesan Item Ini
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="menu-card" data-category="ayam" data-hover="card">
+            <div class="menu-thumb">
+              <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=600&q=80" alt="Ayam Pop Minang">
+              <span class="menu-badge">Khas Bukittinggi</span>
+              <span class="spicy-level" title="Gurih Tidak Pedas">✨ Lembut</span>
+            </div>
+            <div class="menu-info">
+              <div class="menu-title-row">
+                <h3 class="menu-item-name">Ayam Pop Gurih Spesial</h3>
+                <span class="menu-price">Rp 18.000</span>
+              </div>
+              <p class="menu-desc">Ayam pejantan dimasak dengan air kelapa dan bawang putih, lalu dicelup minyak sekejap. Sangat lembut ditemani saus tomat asam manis pedas.</p>
+              <div class="menu-card-footer">
+                <button class="btn btn-sm btn-outline-primary btn-pesan-item" data-name="Ayam Pop Gurih Spesial" data-price="18000" data-hover="btn">
+                  <i class="fa-brands fa-whatsapp"></i> Pesan Item Ini
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="menu-card" data-category="legendaris" data-hover="card">
+            <div class="menu-thumb">
+              <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=600&q=80" alt="Dendeng Batokok Balado">
+              <span class="menu-badge">Pedas Mantap</span>
+              <span class="spicy-level" title="Level Pedas 3 dari 3">🌶️🌶️🌶️</span>
+            </div>
+            <div class="menu-info">
+              <div class="menu-title-row">
+                <h3 class="menu-item-name">Dendeng Batokok Lado Merah</h3>
+                <span class="menu-price">Rp 22.000</span>
+              </div>
+              <p class="menu-desc">Irisan daging sapi empuk dipukul (batokok) lalu dipanggang aroma asap dan dilumuri sambal cabai merah ulek kasar yang segar.</p>
+              <div class="menu-card-footer">
+                <button class="btn btn-sm btn-outline-primary btn-pesan-item" data-name="Dendeng Batokok Lado Merah" data-price="22000" data-hover="btn">
+                  <i class="fa-brands fa-whatsapp"></i> Pesan Item Ini
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="menu-card" data-category="gulai" data-hover="card">
+            <div class="menu-thumb">
+              <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80" alt="Gulai Tunjang Kikil">
+              <span class="menu-badge best">Kenyal Gurih</span>
+              <span class="spicy-level" title="Level Pedas 2 dari 3">🌶️🌶️</span>
+            </div>
+            <div class="menu-info">
+              <div class="menu-title-row">
+                <h3 class="menu-item-name">Gulai Tunjang (Kikil Sapi)</h3>
+                <span class="menu-price">Rp 24.000</span>
+              </div>
+              <p class="menu-desc">Kikil kaki sapi empuk kenyal dengan kuah gulai santan kental keemasan yang sarat kunyit, lengkuas, dan asam kandis.</p>
+              <div class="menu-card-footer">
+                <button class="btn btn-sm btn-outline-primary btn-pesan-item" data-name="Gulai Tunjang Kikil" data-price="24000" data-hover="btn">
+                  <i class="fa-brands fa-whatsapp"></i> Pesan Item Ini
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="menu-card" data-category="ayam" data-hover="card">
+            <div class="menu-thumb">
+              <img src="https://images.unsplash.com/photo-1598103442097-8b74394b95c6?auto=format&fit=crop&w=600&q=80" alt="Ayam Bakar Bumbu Padang">
+              <span class="menu-badge">Aroma Arang</span>
+              <span class="spicy-level" title="Level Pedas 2 dari 3">🌶️🌶️</span>
+            </div>
+            <div class="menu-info">
+              <div class="menu-title-row">
+                <h3 class="menu-item-name">Ayam Bakar Bumbu Padang</h3>
+                <span class="menu-price">Rp 18.000</span>
+              </div>
+              <p class="menu-desc">Diungkep bumbu kuning rempah berjam-jam lalu dipanggang di atas arang batok kelapa hingga terkaramelisasi harum menggoda.</p>
+              <div class="menu-card-footer">
+                <button class="btn btn-sm btn-outline-primary btn-pesan-item" data-name="Ayam Bakar Bumbu Padang" data-price="18000" data-hover="btn">
+                  <i class="fa-brands fa-whatsapp"></i> Pesan Item Ini
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="menu-card" data-category="ayam" data-hover="card">
+            <div class="menu-thumb">
+              <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=600&q=80" alt="Telur Dadar Barendo">
+              <span class="menu-badge best">Kriuk Bersarang</span>
+              <span class="spicy-level" title="Level Pedas 1 dari 3">🌶️</span>
+            </div>
+            <div class="menu-info">
+              <div class="menu-title-row">
+                <h3 class="menu-item-name">Telur Dadar Barendo Crispy</h3>
+                <span class="menu-price">Rp 10.000</span>
+              </div>
+              <p class="menu-desc">Telur bebek dipadukan daun bawang, cabai giling, dan bumbu rempah, digoreng dengan teknik khusus hingga bersarang renyah di tepi dan tebal di tengah.</p>
+              <div class="menu-card-footer">
+                <button class="btn btn-sm btn-outline-primary btn-pesan-item" data-name="Telur Dadar Barendo Crispy" data-price="10000" data-hover="btn">
+                  <i class="fa-brands fa-whatsapp"></i> Pesan Item Ini
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="menu-card" data-category="pelengkap" data-hover="card">
+            <div class="menu-thumb">
+              <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80" alt="Sambal Ijo & Daun Singkong">
+              <span class="menu-badge">Wajib di Piring</span>
+              <span class="spicy-level" title="Level Pedas 2 dari 3">🌶️🌶️</span>
+            </div>
+            <div class="menu-info">
+              <div class="menu-title-row">
+                <h3 class="menu-item-name">Sambal Lado Ijo + Lalap Singkong</h3>
+                <span class="menu-price">Rp 5.000</span>
+              </div>
+              <p class="menu-desc">Cabai hijau muda kukus diulek kasar dengan bawang merah, tomat hijau, dan minyak kelapa panas. Pasangan setia daun singkong lembut.</p>
+              <div class="menu-card-footer">
+                <button class="btn btn-sm btn-outline-primary btn-pesan-item" data-name="Sambal Lado Ijo + Singkong" data-price="5000" data-hover="btn">
+                  <i class="fa-brands fa-whatsapp"></i> Pesan Item Ini
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="menu-card" data-category="gulai" data-hover="card">
+            <div class="menu-thumb">
+              <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80" alt="Sayur Kapau Gulai Nangka">
+              <span class="menu-badge">Khas Bukittinggi</span>
+              <span class="spicy-level" title="Level Pedas 1 dari 3">🌶️</span>
+            </div>
+            <div class="menu-info">
+              <div class="menu-title-row">
+                <h3 class="menu-item-name">Gulai Nangka Muda & Kacang Panjang</h3>
+                <span class="menu-price">Rp 7.000</span>
+              </div>
+              <p class="menu-desc">Nangka muda empuk berpadu kacang panjang renyah dalam kuah gulai kuning gurih sedikit pedas nan menyegarkan.</p>
+              <div class="menu-card-footer">
+                <button class="btn btn-sm btn-outline-primary btn-pesan-item" data-name="Gulai Nangka Muda" data-price="7000" data-hover="btn">
+                  <i class="fa-brands fa-whatsapp"></i> Pesan Item Ini
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-banner-box" data-hover="card">
+          <div class="banner-content">
+            <h3>Punya Pesanan Acara, Kotakan, atau Catering?</h3>
+            <p>Warung kami melayani nasi kotak hajatan, rapat kantor, tasyakuran, hingga kenduri adat dengan harga bersahabat dan tepat waktu.</p>
+          </div>
+          <div class="banner-btn">
+            <a href="https://wa.me/6281298765432?text=Halo%20Uda%20Pemilik%20Warung,%20saya%20ingin%20tanya%20paket%20catering%20/%20nasi%20kotak%20Padang" target="_blank" rel="noopener" class="btn btn-wa-direct" data-hover="btn">
+              <i class="fa-brands fa-whatsapp"></i> Konsultasi Catering WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section / Hubungi Pemilik Warung -->
+    <section class="section kontak-section" id="kontak">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-kicker">Layanan & Pemesanan</span>
+          <h2 class="section-title">Hubungi Langsung Pemilik Warung</h2>
+          <p class="section-subtitle">
+            Ada pertanyaan menu, pesanan khusus, atau ingin memastikan lauk favorit Anda masih tersedia? Uda pemilik warung siap melayani Anda dengan hangat!
+          </p>
+        </div>
+
+        <div class="kontak-layout">
+          <!-- Card Info Pemilik & Warung -->
+          <div class="kontak-card info-card" data-hover="card">
+            <div class="owner-profile">
+              <div class="owner-avatar">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80" alt="Foto Pemilik Warung - Uda Hendra">
+                <span class="online-indicator" title="Uda Sedang Online"></span>
+              </div>
+              <div class="owner-details">
+                <span class="owner-label">Pemilik Warung:</span>
+                <h3 class="owner-name">Uda Hendra Sutan Marajo</h3>
+                <p class="owner-sub">Generasi ke-2 Pengelola Resep Autentik Minang</p>
+              </div>
+            </div>
+
+            <div class="quote-box">
+              <i class="fa-solid fa-quote-left quote-icon"></i>
+              <p><em>"Rancak di awak, katuju di urang. Masakan nan rancak bukan cuma lamak di lidah, tapi tulus dari hati nan mambuek rindu pulang kampuang."</em></p>
+            </div>
+
+            <div class="contact-methods">
+              <div class="contact-method-item">
+                <div class="method-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                <div class="method-detail">
+                  <span class="method-title">WhatsApp Resmi Pemilik:</span>
+                  <a href="https://wa.me/6281298765432" target="_blank" rel="noopener" class="method-link">+62 812-9876-5432</a>
+                  <span class="method-badge">Respon Cepat (09:00 - 21:30)</span>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="method-detail">
+                  <span class="method-title">Telepon Warung:</span>
+                  <a href="tel:+62215551234" class="method-link">(021) 555-1234</a>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="method-detail">
+                  <span class="method-title">Alamat Warung:</span>
+                  <p class="method-text">Jl. Ranah Minang No. 45, Kebayoran Baru, Jakarta Selatan (Sebelah Bank Nagari)</p>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-icon"><i class="fa-solid fa-clock"></i></div>
+                <div class="method-detail">
+                  <span class="method-title">Jam Buka:</span>
+                  <p class="method-text">Buka Setiap Hari: <strong>09.00 - 22.00 WIB</strong></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Big Direct WhatsApp Button -->
+            <div class="direct-wa-box mt-4">
+              <a href="https://wa.me/6281298765432?text=Halo%20Uda%20Hendra,%20saya%20sedang%20melihat%20website%20Warung%20Sabana%20Rancak%20dan%20ingin%20bertanya" target="_blank" rel="noopener" class="btn btn-wa-big w-100" data-hover="btn">
+                <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp Uda Hendra Sekarang
+              </a>
+            </div>
+          </div>
+
+          <!-- Form Pemesanan Cepat ke WhatsApp -->
+          <div class="kontak-card form-card" data-hover="card">
+            <div class="form-header">
+              <div class="form-tag"><i class="fa-solid fa-paper-plane"></i> Form Pemesanan Langsung</div>
+              <h3>Kirim Pesanan / Pertanyaan ke WhatsApp</h3>
+              <p>Isi formulir di bawah ini dan sistem akan langsung membuka WhatsApp Anda dengan pesan rapi yang siap dikirim ke Uda!</p>
+            </div>
+
+            <form id="waForm" class="contact-form">
+              <div class="form-group">
+                <label for="clientName">Nama Anda:</label>
+                <div class="input-with-icon">
+                  <i class="fa-regular fa-user"></i>
+                  <input type="text" id="clientName" placeholder="Contoh: Rian Pratama" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-half">
+                  <label for="orderType">Tipe Pemesanan:</label>
+                  <div class="input-with-icon">
+                    <i class="fa-solid fa-utensils"></i>
+                    <select id="orderType">
+                      <option value="Bungkus Bawa Pulang (Takeaway)">Bungkus Bawa Pulang (Takeaway)</option>
+                      <option value="Makan di Tempat (Dine-in)">Makan di Tempat (Dine-in)</option>
+                      <option value="Pesan Antar / Delivery">Pesan Antar / Delivery</option>
+                      <option value="Nasi Kotak / Acara Besar">Nasi Kotak / Acara Besar</option>
+                      <option value="Pertanyaan Umum">Hanya Bertanya Menu / Stok</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group col-half">
+                  <label for="portionCount">Jumlah Porsi / Orang:</label>
+                  <div class="input-with-icon">
+                    <i class="fa-solid fa-calculator"></i>
+                    <input type="number" id="portionCount" min="1" value="1">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="dishChoices">Pilihan Lauk yang Diinginkan:</label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-plate-wheat"></i>
+                  <input type="text" id="dishChoices" placeholder="Contoh: 1 Rendang, 1 Ayam Pop, Telur Barendo" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="clientNotes">Catatan Tambahan (Selera Anda):</label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-comment-dots"></i>
+                  <textarea id="clientNotes" rows="3" placeholder="Contoh: Kuah gulai banjir, sambal ijo dibanyakin, perkedel 1, kuah dipisah..."></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit w-100" data-hover="btn">
+                <i class="fa-brands fa-whatsapp"></i> Hubungi Pemilik & Kirim Format Pesanan
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal Pop-up Kontak Cepat -->
+  <div class="modal-overlay" id="kontakModal">
+    <div class="modal-box" data-hover="card">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Tutup Jendela Kontak">&times;</button>
+      <div class="modal-header">
+        <div class="modal-avatar">
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        <h3>Hubungi Uda Hendra (Pemilik Warung)</h3>
+        <p>Pilih jalur komunikasi yang paling nyaman bagi Anda</p>
+      </div>
+
+      <div class="modal-body">
+        <a href="https://wa.me/6281298765432?text=Halo%20Uda%20Hendra,%20saya%20ingin%20bertanya%20menu%20dan%20memesan%20makanan" target="_blank" rel="noopener" class="modal-contact-item whatsapp-btn" data-hover="btn">
+          <div class="item-icon"><i class="fa-brands fa-whatsapp"></i></div>
+          <div class="item-text">
+            <strong>Chat WhatsApp (Rekomendasi)</strong>
+            <span>+62 812-9876-5432 &bull; Respon Cepat</span>
+          </div>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <a href="tel:+6281298765432" class="modal-contact-item phone-btn" data-hover="btn">
+          <div class="item-icon"><i class="fa-solid fa-phone-volume"></i></div>
+          <div class="item-text">
+            <strong>Panggilan Telepon Langsung</strong>
+            <span>Bicara langsung dengan Uda</span>
+          </div>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <a href="#kontak" class="modal-contact-item form-btn" id="modalGoToForm" data-hover="btn">
+          <div class="item-icon"><i class="fa-solid fa-file-pen"></i></div>
+          <div class="item-text">
+            <strong>Kirim Format Pesanan Rinci</strong>
+            <span>Gunakan formulir pemesanan online kami</span>
+          </div>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="modal-footer">
+        <span>📍 Alamat: Jl. Ranah Minang No. 45, Jakarta Selatan</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Action Button -->
+  <a href="https://wa.me/6281298765432?text=Halo%20Uda,%20saya%20ingin%20pesan%20Nasi%20Padang%20Sabana%20Rancak" target="_blank" rel="noopener" class="floating-wa-btn" id="floatingWA" title="Hubungi Pemilik via WhatsApp" data-hover="btn">
+    <div class="pulse-ring"></div>
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="floating-tooltip">Chat Uda Hendra</span>
+  </a>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-col brand-col">
+        <div class="footer-logo">
+          <span class="brand-name">SABANA RANCAK</span>
+          <span class="brand-tagline">Warung Nasi Padang Autentik</span>
+        </div>
+        <p class="footer-about">
+          Melestarikan cita rasa luhur kuliner Minangkabau dengan dedikasi resep turun-temurun, bahan bermutu tinggi, dan pelayanan penuh senyuman.
+        </p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram Warung" data-hover="btn"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="TikTok Warung" data-hover="btn"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" aria-label="Facebook Warung" data-hover="btn"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://wa.me/6281298765432" aria-label="WhatsApp Warung" data-hover="btn"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Menu Andalan</h4>
+        <ul class="footer-links">
+          <li><a href="#menu" data-hover="link">Rendang Daging Marapi</a></li>
+          <li><a href="#menu" data-hover="link">Ayam Pop Minang</a></li>
+          <li><a href="#menu" data-hover="link">Dendeng Batokok Balado</a></li>
+          <li><a href="#menu" data-hover="link">Gulai Tunjang Kikil</a></li>
+          <li><a href="#menu" data-hover="link">Telur Dadar Barendo</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigasi & Edukasi</h4>
+        <ul class="footer-links">
+          <li><a href="#filosofi" data-hover="link">Filosofi Masakan Minang</a></li>
+          <li><a href="#rempah-interaktif" data-hover="link">Eksplorasi 6 Rempah</a></li>
+          <li><a href="#tradisi" data-hover="link">Tradisi Hidang & Bungkus</a></li>
+          <li><a href="#tradisi" data-hover="link">Simulator Racik Piring</a></li>
+          <li><a href="#kontak" data-hover="link">Kontak Pemilik Warung</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Jam Operasional</h4>
+        <div class="jam-box">
+          <p><strong>Senin - Minggu:</strong><br>09.00 - 22.00 WIB</p>
+          <p><em>Hari Jumat tutup 11.30 - 13.00 untuk Shalat Jumat</em></p>
+          <div class="halal-badge">
+            <i class="fa-solid fa-circle-check"></i> Jaminan 100% Halal
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 Warung Nasi Padang Sabana Rancak. Seluruh Hak Cipta Dilindungi. <em>"Makan lamak, hati sanang!"</em></p>
+        <p class="credit">Dibuat dengan rempah cinta & bangga kuliner Indonesia.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
